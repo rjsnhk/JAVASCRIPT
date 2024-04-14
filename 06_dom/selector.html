@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+
+        
+        <!-- document.getElementById('title').id -->
+
+        <!-- document.getElementById('title').className -->
+
+        <!-- document.getElementById('title').getAttribute('class') -->
+
+        <!-- document.getElementById('title').getAttribute('id') -->
+
+        <!--it overrides document.getElementById('title').setAttribute('class','test') --> 
+
+        <!-- const tit=document.getElementById('title') now we use tit as a variable--> 
+
+
+        <!-- tit.style.backgroundColor='lighblue'
+'lighblue'
+tit.style.backgroundColor='red'
+'red'
+tit.style.padding='19px'
+'19px' -->
+
+<!-- tit.innerHTML = it shows with all html elements also =
+'Dom learning <span style="display: none;">test text</span>Lorem, ipsum.' -->
+<!-- tit.innerText = it shows only content no span block ==
+'Dom learning Lorem, ipsum.' -->
+<!-- tit.textContent = it show all text element==
+'Dom learning test textLorem, ipsum.' -->
+
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+
+
+        <!-- document.querySelector('h1') -->
+
+        <!-- document.querySelector('#title') -->
+        <!-- document.querySelector('.heading') -->
+
+        <!-- const qs=document.querySelectorAll('h2')   qs is a  linked list -->
+
+        <!-- qs[0].style.backgroundColor="red" -->
+
+        <!-- qs.forEach(function (item){ 
+            item.style.backgroundColor="green";
+        }) -->
+
+        <!-- qs.forEach((item)=>{ 
+            item.style.backgroundColor="red";
+        }) -->
+
+
+
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <!-- document.querySelector('input[type="password"]') -->
+
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+
+        <!-- const qs=document.getElementsByClassName('list-item') //here it return a collection we further convert collection to array then we use it-->
+
+        <!-- const hs=Array.from(qs) //now it converts to array// hs is a array-->
+
+        <!-- const hs=Array.from(qs) //it turns red -->
+    </div>
+</body>
+</html>
+
