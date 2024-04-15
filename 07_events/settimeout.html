@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <p></p>
+    <button id="stop">Stop</button>
+
+
+
+</body>
+<script>
+    const sayHII=function(){
+        console.log("hii");
+       }
+
+const changName=function(){
+    document.querySelector('h1').innerHTML="best html js series ";
+}
+
+
+//2 second baad ye change hoge rh jaega
+   const changeme=setTimeout(changName,2000)
+
+//ye settime out ko rok skta he
+   //clearTimeout(changeme);
+   
+   
+   //if we press stop before 2 second name will not change
+   document.getElementById('stop').addEventListener('click',function(){
+    clearTimeout(changeme);
+    console.log("stopped")
+   })
+
+
+</script>
+</html>
